@@ -1,2 +1,2 @@
 # ExerciceAndTest
-Exercice and test for upgrade my level 
+Exercices and tests to improve my skills

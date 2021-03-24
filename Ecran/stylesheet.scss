@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap");
+@import "reset";
+
+.placement {
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  .style {
+    font-family: "Montserrat";
+    font-size: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    // border: 2px outset black;
+  }
+ #un {
+     display: flex;
+    justify-content: flex-start !important;
+    padding-left: 200px;
+ }
+
+
+
+ #deux{
+    display: flex;
+    justify-content: flex-end !important;
+    padding-right: 200px;
+    
+
+ }
+ #trois {
+    display: flex;
+    justify-content: flex-start !important;
+    padding-left: 200px;
+}
+#quatre {
+    display: flex;
+    justify-content: flex-end !important;
+    padding-right: 200px;
+}
+
+
+}

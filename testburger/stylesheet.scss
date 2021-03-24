@@ -1,39 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
-@import 'reset';
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap");
+@import "reset";
 
 .body {
-    background-color: rgba(53, 52, 52, 0.116);
-}
+  background-color: rgba(53, 52, 52, 0.116);
+  #particles-js {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 
-#navbar {
+  #navbar {
+    position: relative;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.61);
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 80px;
+
+    #navabar_ul {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      #titre_mid {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        list-style: none;
+        align-items: center;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .forme {
+        background-color: rgba(0, 255, 255, 0);
+        cursor: pointer;
+        z-index: 5;
+
+        flex-direction: column;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        transition: all 400ms;
+
+
+
+
+        .trait1 {
+          position: relative;
+          margin: 0px 0px 15px 0px;
+          width: 50px;
+          height: 5px;
+          background: white;
+          animation: move 3s infinite ease-in-out;
+        }
+
+        @keyframes move {
+          0% {
+            position: relative;
+          }
+          33% {
+            transform: translate(10px);
+          }
+          66% {
+            transform: translate(-10px);
+          }
+        }
+
+
+
+
+
+
+        .cross1 {
+          background: white;
+          position: relative;
+          margin: 0px 0px 15px 0px;
+          width: 50px;
+          height: 5px;
+          transition-property: all;
+
+          animation: crossmoov 1s infinite ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes crossmoov {
+          0% {
+            position: relative;
+          }
+          100% {
+            transform: rotate(-25deg);
+          }
+        }
+
+
+
+
+
+
+
+        .trait2 {
+          position: relative;
+          margin: 0px 0px 15px 0px;
+          width: 50px;
+          height: 5px;
+          background: white;
+          animation: othermove 3s infinite ease-in-out;
+        }
+        @keyframes othermove {
+          0% {
+            position: relative;
+          }
+          33% {
+            transform: translate(-10px);
+          }
+          66% {
+            transform: translate(10px);
+          }
+        }
+
+
+
+        .cross2 {
+          background: white;
+          position: relative;
+          margin: 0px 0px 15px 0px;
+          width: 50px;
+          height: 5px;
+          transition-property: all;
+
+          animation: crossmoov2 1s infinite ease-in-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes crossmoov2 {
+          0% {
+            position: relative;
+          }
+          100% {
+            transform: rotate(25deg);
+          }
+        }
+      }
+    }
+  }
 }
 
-#navabar_ul {
-    height: 100%;
-    
+
+
+
+.burgerOpen {
+  display: block;
+  width: 100em;
+  height: 100em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aqua;
 }
 
-#titre_mid{
-    
-   
-    // display: flex;
-    // justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    list-style: none;
-
-
-    text-align: center;
-    
-
-
-    
-    
-    
-
+.forme:hover {
+  transform: rotate(60deg);
 }
